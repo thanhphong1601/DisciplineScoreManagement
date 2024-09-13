@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="com.nhom12_DisciplineScoreManagement_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.nhom12.pojo.Faculty</class>
+    <class>com.nhom12.pojo.User</class>
+    <class>com.nhom12.pojo.SchoolEmail</class>
+    <class>com.nhom12.pojo.Activity</class>
+    <class>com.nhom12.pojo.ActivityRegistration</class>
+    <class>com.nhom12.pojo.MissingActivityReport</class>
+    <class>com.nhom12.pojo.DisciplineScore</class>
+    <class>com.nhom12.pojo.Class</class>
+    <class>com.nhom12.pojo.Comment</class>
+    <class>com.nhom12.pojo.ExtracurricularAchievement</class>
+    <class>com.nhom12.pojo.StudentClass</class>
+    <class>com.nhom12.pojo.StudentLike</class>
+    <class>com.nhom12.pojo.Role</class>
+    <class>com.nhom12.pojo.Criterion</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/disciplinedb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Megamanzx123"/>
+    </properties>
+  </persistence-unit>
+</persistence>

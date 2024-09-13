@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="headerBase" template="/WEB-INF/layout/header.jsp">
+        <put-attribute name="findBar" value="/WEB-INF/layout/findBarBase.jsp" />
+    </definition>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="content" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+        
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ"/>
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp"/>
+
+    </definition>
+    <definition name="user" extends="baseLayout">
+        <put-attribute name="title" value="Quản Lý Người Dùng"/>
+        <put-attribute name="header" value="/WEB-INF/layout/headerUserPage.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/user.jsp"/>
+    </definition>
+    <definition name="add-user" extends="baseLayout">
+        <put-attribute name="title" value="Quản Lý Người Dùng"/>
+        <put-attribute name="header" value="/WEB-INF/layout/headerCreatePage.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/addUser.jsp"/>
+    </definition>
+    <definition name="activityCreate" extends="baseLayout">
+        <put-attribute name="title" value="Thêm Hoạt Động"/>
+        <put-attribute name="header" value="/WEB-INF/layout/headerCreatePage.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/createActivity.jsp"/>
+    </definition>
+    <definition name="pointCreate" extends="baseLayout">
+        <put-attribute name="title" value="Trang Thêm Điểm Rèn Luyện"/>
+        <put-attribute name="header" value="/WEB-INF/layout/headerCreatePage.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/createPoint.jsp"/>
+    </definition>
+    <definition name="scores" extends="baseLayout">
+        <put-attribute name="title" value="Trang Xem Loại Điểm"/>
+        <put-attribute name="content" value="/WEB-INF/pages/score.jsp"/>
+    </definition>
+    <definition name="missingReport" extends="baseLayout">
+        <put-attribute name="title" value="Trang Báo Thiếu Hoạt Động"/>
+        <put-attribute name="header" value="/WEB-INF/layout/headerCreatePage.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/missingReport.jsp" />
+    </definition>
+    <definition name="activityPage" extends="baseLayout">
+        <put-attribute name="title" value="Trang Danh Sách Đăng Ký Hoạt Động"/>
+        <put-attribute name="header" value="/WEB-INF/layout/headerCreatePage.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/activityRegistration.jsp" />
+    </definition>
+    <definition name="stat" extends="baseLayout">
+        <put-attribute name="title" value="Thống Kê Báo Cáo"/>
+        <put-attribute name="header" value="/WEB-INF/layout/headerCreatePage.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/stats.jsp" />
+    </definition>
+    <definition name="statClass" extends="baseLayout">
+        <put-attribute name="title" value="Thống Kê Báo Cáo"/>
+        <put-attribute name="header" value="/WEB-INF/layout/headerCreatePage.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/statsClass.jsp" />
+    </definition>
+    
+    <!--/testtt/-->
+    <definition name="test" extends="baseLayout">
+        <put-attribute name="content" value="/WEB-INF/pages/testPage.jsp"/>
+    </definition>
+</tiles-definitions>
